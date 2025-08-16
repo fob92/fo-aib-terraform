@@ -1,3 +1,14 @@
+terraform {
+  required_version = "~> 1.0"
+  required_providers {
+    google = {
+      source  = "hashicorp/google"
+      version = "~> 4.0"
+    }
+  }
+}
+
+
 locals {
   sa_newrelic_gcp_logging = "wnr00v58or2@newrelic-gcp.iam.gserviceaccount.com"
 }
